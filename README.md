@@ -5,6 +5,12 @@ This project provides a ROS-based implementation of a **PI controller** to contr
 ## Overview
 The PI controller is designed to ensure the robot can follow various paths using feedback from its current state. The project simulates the robot’s movements in the **Gazebo** simulator, and the results are visualized in **PlotJuggler**.
 
+## Demo
+
+Here is a demonstration of the robot following the path:
+
+https://github.com/user-attachments/assets/1d0c0bd5-9ca6-4957-aa0c-44f48a4ae3c4
+
 ## File Structure
 - **src/controller.py**: Implements the PI controller, computing velocity commands based on the robot's position and orientation.
 - **src/pose_monitor.py**: Monitors the robot's pose and publishes the robot's path and orientation data. It also retrieves ground truth information from the Gazebo simulation.
@@ -38,7 +44,7 @@ All dependencies are specified in the `package.xml` file.
 ### Build the package:
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mirzaim/Path-Tracking-PID.git
    ```
 2. Navigate to the workspace and build the package:
    ```bash
